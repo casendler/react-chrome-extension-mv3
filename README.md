@@ -1,22 +1,13 @@
 # React Chrome Extension (Manifest v3) Boilerplate
 
-Starting point for creating a Chrome Browser Extension popup and service-worker based background script. Contains a custom Makefile to prepare your build for an unpacked local upload to chrome://extensions and prepares a zip file for direct upload to the Chrome Web Store.
+This repo is forked from ``casendler/react-chrome-extension-mv3``.
+
+Starting point for creating a Chrome Browser Extension popup and service-worker based background script. 
+
+Instead of using a Makefile like casendler, I have updated the ``package.json`` build command to avoid inline scripting.
+In this template, you only have to run ``npm run build`` and then you can import the ``build`` folder as a chrome extension.
 
 Traditionally browser extensions are built using vanilla JS. While this is certainly feasible, it is often cumbersome and inefficient when developing more complex extensions with a rich UI.
-
-## Available Scripts
-
-In the root project directory, you can run:
-
-### `make build`
-
-Prepares the app build for upload to chrome://extensions/ and the Google Chrome Webstore \
-It correctly bundles your project and optimizes the build for use as a Chrome Extension. \
-
-This command creates two things:
-
-1.  A `./dist` directory that contains the files for `chrome://extensions/` -- use this folder to load the unpacked extension
-2.  A file called latestBuild.zip, this .zip can be uploaded to the Developer Console when submitting your extension to the Chrome Web Store
 
 #### Known Limitations
 
