@@ -9,6 +9,13 @@ In this template, you only have to run ``npm run build`` and then you can import
 
 Traditionally browser extensions are built using vanilla JS. While this is certainly feasible, it is often cumbersome and inefficient when developing more complex extensions with a rich UI.
 
+#### Use temaplate
+
+You can use this tempalte for your own project.
+
+Please run ``npm install`` in the root directory to install the necessary packages.
+
+
 #### Known Limitations
 
 - Does not currently handle [Options](https://developer.chrome.com/docs/extensions/mv3/options/) or [Content Scripts](https://developer.chrome.com/docs/extensions/mv3/content_scripts/). For most use cases the options.html page from Chrome is unecessary as you can build an options menu into your popup directly. In order to enable content scripts and the options page, I recommend using `react-app-rewired` to replace the standard single entry point with three entry points for the popup, options, and content scripts.
